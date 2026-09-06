@@ -10,7 +10,7 @@ import Icon from "../components/common/Icon";
 import Button from "../components/common/Button";
 import { formatINR } from "../utils/currency";
 import "./BookingPage.css";
-
+//booking steps with journey, passengers, payment and confirmation
 export default function BookingPage() {
   const { query, navigate } = useRouter();
   const { draftJourney, draftPassengers, setDraftPassengers, confirmBooking } = useBooking();
