@@ -1,0 +1,112 @@
+.smart-journey {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, var(--surface), var(--surface-raised));
+  border: 1px solid var(--border);
+  padding: var(--space-7) var(--space-6);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+.smart-journey h2 {
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  font-weight: 500;
+  max-width: 420px;
+}
+
+.smart-journey > .sj-text > p {
+  margin-top: var(--space-2);
+  max-width: 420px;
+}
+
+.sj-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin: var(--space-6) 0;
+}
+
+.sj-benefit {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sj-benefit-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gold-soft);
+  color: var(--gold);
+}
+
+.sj-benefit h4 {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.sj-benefit p {
+  font-size: 0.78rem;
+}
+
+.sj-globe {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, rgba(91,147,255,0.35), transparent 60%),
+    radial-gradient(circle at 65% 70%, rgba(220,174,85,0.25), transparent 55%),
+    var(--surface-raised);
+  border: 1px solid var(--border-strong);
+  overflow: hidden;
+}
+
+.sj-globe svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+.sj-globe .route {
+  stroke: var(--gold);
+  stroke-width: 1.4;
+  fill: none;
+  stroke-dasharray: 4 5;
+  animation: dash 6s linear infinite;
+  opacity: 0.75;
+}
+
+@keyframes dash {
+  to { stroke-dashoffset: -100; }
+}
+
+.sj-globe .node {
+  fill: var(--surface);
+  stroke: var(--border-strong);
+}
+
+.sj-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--blue-soft);
+  color: var(--blue);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 900px) {
+  .smart-journey { grid-template-columns: 1fr; }
+  .sj-globe { max-width: 320px; margin: 0 auto; }
+}
+@media (max-width: 560px) {
+  .sj-benefits { grid-template-columns: repeat(2, 1fr); }
+}

@@ -1,0 +1,45 @@
+.support-page { padding: var(--space-6) 0 var(--space-8); max-width: 720px; margin: 0 auto; }
+
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  padding: var(--space-4);
+  margin-bottom: var(--space-3);
+  cursor: pointer;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.faq-answer {
+  margin-top: var(--space-3);
+  font-size: 0.9rem;
+}
+
+.support-contact {
+  margin-top: var(--space-6);
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.support-contact-card {
+  flex: 1;
+  min-width: 200px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: var(--space-4);
+  text-align: center;
+}
+.support-contact-card .icon-circle {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: var(--gold-soft); color: var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 10px;
+}

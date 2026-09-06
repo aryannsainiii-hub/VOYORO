@@ -1,0 +1,4 @@
+.profile-page { padding: var(--space-6) 0 var(--space-8); }
+
+.profile-section { margin-top: var(--space-6); }
+.profile-section h3 { font-size: 1.1rem; font-weight: 500; margin-bottom: var(--space-4); }

@@ -1,0 +1,5 @@
+.results-empty {
+  text-align: center;
+  padding: var(--space-8) 0;
+}
+.results-empty h3 { margin-bottom: var(--space-2); }

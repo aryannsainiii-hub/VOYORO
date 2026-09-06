@@ -1,0 +1,9 @@
+.bookings-page { padding: var(--space-6) 0 var(--space-8); }
+
+.bookings-empty {
+  text-align: center;
+  padding: var(--space-8) var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--border-strong);
+}
+.bookings-empty h3 { margin-bottom: var(--space-2); }
