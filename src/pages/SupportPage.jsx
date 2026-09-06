@@ -11,7 +11,7 @@ const faqs = [
 
 export default function SupportPage() {
   const [open, setOpen] = useState(0);
-
+//support page with faqs and contact options
   return (
     <div className="container support-page">
       <div className="section-head">
