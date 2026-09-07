@@ -80,7 +80,7 @@ src/
 | `/my-bookings` | My Bookings dashboard |
 | `/profile` | User profile |
 | `/rewards` | Rewards |
-| `/support` | Support / FAQ |
+| `/support` | Support / FAQ ||
 
 ## Fonts
 
