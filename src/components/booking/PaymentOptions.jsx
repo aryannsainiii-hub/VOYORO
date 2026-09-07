@@ -32,5 +32,6 @@ export default function PaymentOptions({ selected, onSelect }) {
         <Icon name="shield" size={13} /> This is a frontend prototype — no real payment gateway is connected and no charge will occur.
       </p>
     </div>
+    //
   );
 }
