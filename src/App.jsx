@@ -13,7 +13,7 @@ import ProfilePage from "./pages/ProfilePage";
 import ExplorePage from "./pages/ExplorePage";
 import RewardsPage from "./pages/RewardsPage";
 import SupportPage from "./pages/SupportPage";
-
+//import all paths and gateways
 const routes = {
   "/": HomePage,
   "/results": ResultsPage,
