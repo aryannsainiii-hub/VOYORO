@@ -20,7 +20,7 @@ export default function Hero() {
         </p>
       </div>
 
-      <span className="hero-note">More than a trip — it's a lifestyle</span>
+      <span className="hero-note">Moree than a trip — it's a lifestyle</span>
     </section>
   );
 }
