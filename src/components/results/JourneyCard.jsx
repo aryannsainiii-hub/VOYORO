@@ -25,7 +25,7 @@ export default function JourneyCard({ journey, onView }) {
           <div className="journey-price-sub">for {journey.travellers} traveller{journey.travellers > 1 ? "s" : ""}</div>
         </div>
       </div>
-
+{/* // */}
       <div className="journey-route">
         {journey.legs.map((leg, i) => (
           <span key={i} style={{ display: "flex", alignItems: "center", gap: 8 }}>
